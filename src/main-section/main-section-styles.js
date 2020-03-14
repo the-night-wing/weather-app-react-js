@@ -4,22 +4,44 @@ import { flexColumnReverse } from "../styles/global-styles";
 const Container = styled.section`
     position: relative;
     ${flexColumnReverse}
-    justify-content:start;
+    /* justify-content:start; */
     height: 634px;
     width: 100%;
     overflow: hidden;
-    /* margin-top: -64px; */
-    /* box-sizing: border-box; */
-    /* padding: 25px 50px; */
-    /* padding-bottom: 0px; */
-    /* background: transparent; */
-    /* background-color: #f0f0f0; */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+`;
+
+const LabelWrapper = styled.div`
+    ${flexColumnReverse}
+    justify-content:start;
+    margin: 40px;
+`;
+
+const ParallaxBackgroundImage = styled.div`
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    min-height: 634px;
+    overflow: hidden;
+    /* background-size: cover; */
+    background-position: center center;
     /* background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/cKqkdmn02p86440.webp"); */
-    /* background-image: url("../assets/main-section.webp"); */
+    background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/Mv2tfOJOWi70133.webp");
+    overflow-x: hidden;
+    z-index: -1;
+`;
+
+const FixedNavbar = styled.div`
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/Mv2tfOJOWi70133.webp");
+    background-position: center center;
+    background-position-y: 60%;
+    /* background-size: cover; */
+    overflow-x: hidden;
+    z-index: 0;
 `;
 
 const paragraphTemplate = styled.p`
@@ -31,19 +53,21 @@ const paragraphTemplate = styled.p`
 `;
 
 const Temperature = styled(paragraphTemplate)`
-    /* color: white; */
     font-size: 8em;
-    /* text-align: left; */
 `;
 const Cloudness = styled(paragraphTemplate)`
-    /* color: white; */
     font-size: 3em;
-    /* text-align: left; */
 `;
 const Location = styled(paragraphTemplate)`
-    /* color: white; */
     font-size: 2em;
-    /* text-align: left; */
 `;
 
-export { Container, Temperature, Cloudness, Location };
+export {
+    Container,
+    Temperature,
+    Cloudness,
+    Location,
+    ParallaxBackgroundImage,
+    FixedNavbar,
+    LabelWrapper
+};

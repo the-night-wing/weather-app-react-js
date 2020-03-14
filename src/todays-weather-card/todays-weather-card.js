@@ -5,10 +5,11 @@ import {
     SmallLabel,
     MiddleLabel,
     Temperature,
-    TemperatureBlock
+    TemperatureBlock,
+    SaveLocation
 } from "./todays-weather-card-styles";
 
-import { SubTitle } from "../styles/global-styles";
+import { SubTitle, flexColumn } from "../styles/global-styles";
 
 import { IoIosStar } from "react-icons/io";
 
@@ -24,9 +25,12 @@ export const TodaysWeatherCard = () => {
             </TemperatureBlock>
             Icon
             <MiddleLabel>Overcast</MiddleLabel>
-            <SubTitle>
-                Kyiv <IoIosStar />
-            </SubTitle>
+            <div style={{ display: "flex" }}>
+                <SubTitle>Kyiv</SubTitle>
+                <SaveLocation>
+                    <IoIosStar />
+                </SaveLocation>
+            </div>
             <MiddleLabel>Fri, Mar 6, 15:21</MiddleLabel>
         </Container>
     );

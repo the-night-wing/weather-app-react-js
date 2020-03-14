@@ -10,10 +10,12 @@ import {
 export const CurrentWeatherItem = ({ label, value, metrics, icon }) => {
     return (
         <Container>
+            <Label>{icon}</Label>
             <Label>{label}</Label>
-            {/* <Label>{icon}</Label> */}
-            <Value>{value}</Value>
-            <Metrics>{metrics}</Metrics>
+            <div>
+                <Value>{value}</Value>
+                <Metrics>{metrics}</Metrics>
+            </div>
         </Container>
     );
 };

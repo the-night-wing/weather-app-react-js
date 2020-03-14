@@ -4,10 +4,16 @@ import { flexColumn } from "../styles/global-styles";
 
 const Container = styled.section`
     ${flexColumn}
+    box-sizing : border-box;
+    width: 31%;
+    max-width: 150px;
+    margin: auto;
+    /* margin: 15px 10px; */
 `;
 
 const Text = styled.span`
     color: #2b2b2b;
+    margin: 0px;
 `;
 
 const Label = styled(Text)`
