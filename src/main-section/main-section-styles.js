@@ -41,7 +41,7 @@ const FixedNavbar = styled.div`
     background-position-y: 60%;
     /* background-size: cover; */
     overflow-x: hidden;
-    z-index: 0;
+    z-index: 1;
 `;
 
 const paragraphTemplate = styled.p`

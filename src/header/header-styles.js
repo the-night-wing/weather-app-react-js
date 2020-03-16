@@ -11,7 +11,7 @@ const Container = styled.header`
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 `;
 
 const Title = styled.p`
