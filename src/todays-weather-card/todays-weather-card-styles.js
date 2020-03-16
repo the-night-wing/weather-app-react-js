@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-import { flexColumn, flexRow } from "../styles/global-styles";
+import { flexColumn, flexRow, CardStyles } from "../styles/global-styles";
 
 const Container = styled.article`
     ${flexColumn}
+    ${CardStyles}
     justify-content: space-around;
     align-items: center;
     align-self: stretch;
@@ -13,11 +14,7 @@ const Container = styled.article`
     width: 32%;
     /* height: 25vw; */
     /* height: 370px; */
-    border-radius: 5px;
-    background-color: white;
     /* margin: 0 1% 1% 0; */
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-        0 3px 1px -2px rgba(0, 0, 0, 0.2);
 `;
 
 const Temperature = styled.span`
