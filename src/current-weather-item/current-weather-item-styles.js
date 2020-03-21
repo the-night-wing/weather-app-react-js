@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 import { flexColumn } from "../styles/global-styles";
 
-const Container = styled.section`
+const Container = styled.article`
     ${flexColumn}
     box-sizing : border-box;
     width: 31%;
     max-width: 150px;
     margin: auto;
-    /* margin: 15px 10px; */
 `;
 
 const Text = styled.span`

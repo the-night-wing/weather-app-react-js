@@ -14,7 +14,7 @@ const Container = styled.header`
     z-index: 2;
 `;
 
-const Title = styled.p`
+const Title = styled.h1`
     margin: 0;
     font-weight: normal;
     font-size: 32px;

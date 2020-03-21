@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { flexColumnReverse } from "../styles/global-styles";
 
-const Container = styled.section`
+const Container = styled.article`
     position: relative;
     ${flexColumnReverse}
     /* justify-content:start; */
@@ -22,7 +22,6 @@ const ParallaxBackgroundImage = styled.div`
     left: 0px;
     min-height: 634px;
     overflow: hidden;
-    /* background-size: cover; */
     background-position: center center;
     /* background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/cKqkdmn02p86440.webp"); */
     background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/Mv2tfOJOWi70133.webp");
@@ -39,7 +38,6 @@ const FixedNavbar = styled.div`
     background-image: url("https://d2idu5mmj5r5g3.cloudfront.net/photos_wp/Mv2tfOJOWi70133.webp");
     background-position: center center;
     background-position-y: 60%;
-    /* background-size: cover; */
     overflow-x: hidden;
     z-index: 1;
 `;

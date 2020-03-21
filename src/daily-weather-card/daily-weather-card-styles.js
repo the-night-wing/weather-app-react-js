@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 import { CardStyles, flexColumn } from "../styles/global-styles";
 
-const Container = styled.div`
+const Container = styled.article`
     ${CardStyles}
     ${flexColumn}
-    /* align-items:center; */
-    /* text-align:center; */
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;

@@ -32,7 +32,7 @@ const MiddleLabel = styled.span`
     margin: 5px;
 `;
 
-const TemperatureBlock = styled.article`
+const TemperatureBlock = styled.div`
     ${flexRow}
     align-items: baseline;
     margin: 5px;
