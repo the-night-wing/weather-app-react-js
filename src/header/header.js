@@ -4,13 +4,9 @@ import { LocationInput } from "../location-input/location-input";
 
 import { IoMdMenu, IoMdSettings } from "react-icons/io";
 
-import {
-    Container,
-    Title,
-    Button,
-    RightBlock,
-    LeftBlock
-} from "./header-styles.js";
+import { Button } from "../styles/global-styles";
+
+import { Container, Title, RightBlock, LeftBlock } from "./header-styles.js";
 
 export const Header = () => {
     return (
@@ -21,7 +17,7 @@ export const Header = () => {
                 </Button>
                 <Title>myWEATHER</Title>
             </LeftBlock>
-            <LocationInput Button={Button} />
+            <LocationInput />
             <RightBlock>
                 <Button>Log in</Button>
                 <Button>Sign up</Button>

@@ -29,23 +29,4 @@ const RightBlock = styled.div`
     ${flexRow}
 `;
 
-const Button = styled.button`
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    height: 30px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin: 0 7px;
-    cursor: pointer;
-    transition: 0.3s all ease;
-    outline: none;
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-`;
-
-export { Container, Title, Button, RightBlock, LeftBlock };
+export { Container, Title, RightBlock, LeftBlock };
