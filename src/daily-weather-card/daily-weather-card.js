@@ -40,7 +40,7 @@ export const DailyWeatherCard = () => {
     return (
         <Container>
             <SubTitle>
-                24-hour weather <Link>See more</Link>
+                24-hour weather in Kyiv <Link>See more</Link>
             </SubTitle>
             <LineChart
                 width={1345}

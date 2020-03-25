@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { flexColumn } from "../styles/global-styles";
 
-const Container = styled.article`
+const Container = styled.section`
     ${flexColumn}
     box-sizing : border-box;
     width: 31%;

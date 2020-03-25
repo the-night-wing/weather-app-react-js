@@ -15,7 +15,7 @@ export default function CurrentWeatherCard() {
     const size = 35;
     return (
         <Container>
-            <SubTitle>Current Weather</SubTitle>
+            <SubTitle>Current Weather in Kyiv</SubTitle>
             <ItemsBlock>
                 <CurrentWeatherItem
                     label="Apparent Temp."
