@@ -4,7 +4,7 @@ import { CardStyles } from "../styles/global-styles";
 
 const Container = styled.article`
     ${CardStyles}
-    width: 54%;
+    width: 44%;
     height: 350px;
 `;
 
