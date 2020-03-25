@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
@@ -44,6 +44,12 @@ const bgParallaxData = [
 
 export const MainSection = () => {
     const [showFixedNavbar, setShowFixedNavbar] = useState(false);
+
+    useEffect(() => {
+        if (window.pageYOffset > 450) {
+            turnOnNavbar();
+        }
+    }, []);
 
     const turnOnNavbar = () => {
         setShowFixedNavbar(true);
