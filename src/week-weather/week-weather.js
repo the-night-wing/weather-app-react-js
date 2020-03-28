@@ -18,12 +18,12 @@ import {
 } from "recharts";
 
 const data = [];
-const iconLabels = [];
 
 for (let i = 0; i < 7; i++) {
     data.push({
         y: Math.random().toFixed(1),
         z: Math.random().toFixed(1),
+        m: Math.random().toFixed(1),
         x: i + 1
     });
     // iconLabels.push(i % 2 === 0 ? <FaCloud /> : <FaSun />);
@@ -40,8 +40,9 @@ export const WeekWeather = () => {
                     margin={{ top: 10, right: 20, bottom: -10, left: 0 }}
                 >
                     <CartesianGrid />
-                    <Bar dataKey="y" fill="#237856" />
-                    <Line dataKey="z" stroke="#782390" />
+                    <Bar dataKey="y" fill="#a8e1ff" />
+                    <Line dataKey="z" strokeWidth={3} stroke="#782390" />
+                    <Line dataKey="m" strokeWidth={3} stroke="#34abeb" />
                     <XAxis dataKey="x" />
                     <Tooltip />
                 </ComposedChart>
