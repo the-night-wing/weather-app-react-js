@@ -6,17 +6,12 @@ import { SubTitle } from "../styles/global-styles";
 
 import {
     BarChart,
-    Line,
     XAxis,
     YAxis,
     ResponsiveContainer,
     Tooltip,
-    Legend,
-    CartesianAxis,
     CartesianGrid,
-    Bar,
-    LabelList,
-    Label
+    Bar
 } from "recharts";
 
 const data = [];
