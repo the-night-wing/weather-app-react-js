@@ -67,7 +67,7 @@ export const DailyWeatherCard = () => {
                     <LabelList
                         dataKey="y"
                         formatter={formatter}
-                        offset="10"
+                        offset={10}
                         position="top"
                     />
                 </Line>
