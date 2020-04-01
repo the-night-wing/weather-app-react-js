@@ -19,12 +19,13 @@ const flexColumnReverse = css`
     display: flex;
     flex-direction: column-reverse;
 `;
-const SubTitle = styled.p`
+const SubTitle = styled.h2`
     color: #2b2b2b;
     font-size: 1.5em;
-    margin: 0;
+    margin: 10px 0;
+    font-weight: normal;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
 `;
 
