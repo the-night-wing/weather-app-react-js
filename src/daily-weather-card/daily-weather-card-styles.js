@@ -17,4 +17,10 @@ const Link = styled.span`
     margin: 0 10px;
 `;
 
-export { Container, Link };
+const GraphContainer = styled.div`
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+`;
+
+export { Container, Link, GraphContainer };
