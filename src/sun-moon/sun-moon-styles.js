@@ -7,7 +7,7 @@ import sunEclipse from "../assets/sun-path.png";
 const Container = styled.article`
     ${CardStyles}
     height: 400px;
-    width: 50%;
+    width: 49%;
 `;
 
 const Sun = styled.div`
@@ -15,7 +15,7 @@ const Sun = styled.div`
     height: 200px;
     width: 300px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: show;
 `;
 
 const SunPath = styled.div`
@@ -46,11 +46,12 @@ const SunIconWrapper = styled.div`
     width: 270px;
     height: 270px;
     border-radius: 270px;
+    border: 3px solid transparent;
     color: orange;
     position: absolute;
     top: -2px;
     left: -2px;
-    transform: rotate(90deg);
+    transform: rotate(95deg);
 `;
 
 const SunLineWrapper = styled.div`
@@ -84,12 +85,32 @@ const SunRotationWrapper = styled.div`
     overflow: hidden;
     position: absolute;
     height: 135px;
-    width: 350px;
+    width: 270px;
     top: 15px;
     left: 15px;
 `;
 
-const SunInfo = styled.section``;
+const SunInfo = styled.p`
+    font-size: 16px;
+    position: absolute;
+`;
+
+const Dawn = styled(SunInfo)`
+    bottom: 10px;
+    left: -25px;
+`;
+const Sunrise = styled(SunInfo)`
+    top: 10px;
+    left: 0;
+`;
+const Sunset = styled(SunInfo)`
+    top: 10px;
+    right: 0;
+`;
+const Dusk = styled(SunInfo)`
+    bottom: 10px;
+    right: -25px;
+`;
 
 const Moon = styled.div``;
 
@@ -99,11 +120,14 @@ export {
     SunPath,
     Moon,
     SunSky,
-    SunInfo,
     SunSkyWrapper,
     SunIconWrapper,
     SunLine,
     SunLineWrapper,
     SunPathWrapper,
-    SunRotationWrapper
+    SunRotationWrapper,
+    Dawn,
+    Sunrise,
+    Sunset,
+    Dusk
 };

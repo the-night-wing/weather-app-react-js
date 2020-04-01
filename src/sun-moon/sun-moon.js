@@ -15,7 +15,11 @@ import {
     SunLine,
     SunLineWrapper,
     SunPathWrapper,
-    SunRotationWrapper
+    SunRotationWrapper,
+    Dawn,
+    Sunrise,
+    Sunset,
+    Dusk
 } from "./sun-moon-styles";
 
 export const SunMoon = () => {
@@ -37,6 +41,18 @@ export const SunMoon = () => {
                         </SunIconWrapper>
                     </SunPathWrapper>
                 </SunRotationWrapper>
+                <Dawn>
+                    Dawn <br /> 5:49
+                </Dawn>
+                <Sunrise>
+                    Sunrise <br /> 5:49
+                </Sunrise>
+                <Sunset>
+                    Sunset <br /> 5:49
+                </Sunset>
+                <Dusk>
+                    Dusk <br /> 5:49
+                </Dusk>
             </Sun>
         </Container>
     );
