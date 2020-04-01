@@ -2,7 +2,13 @@ import React from "react";
 
 import { LocationInput } from "../location-input/location-input";
 
-import { IoMdMenu, IoMdSettings } from "react-icons/io";
+import {
+    IoMdMenu,
+    IoMdSettings,
+    IoMdPersonAdd,
+    IoMdLogIn,
+    IoMdLogOut
+} from "react-icons/io";
 
 import { Button } from "../styles/global-styles";
 
@@ -19,8 +25,12 @@ export const Header = () => {
             </LeftBlock>
             <LocationInput />
             <RightBlock>
-                <Button>Log in</Button>
-                <Button>Sign up</Button>
+                <Button>
+                    <IoMdLogIn />
+                </Button>
+                <Button>
+                    <IoMdPersonAdd />
+                </Button>
                 <Button>
                     <IoMdSettings />
                 </Button>

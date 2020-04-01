@@ -3,19 +3,23 @@ import styled from "styled-components";
 import { Button } from "../styles/global-styles";
 
 const Container = styled.section`
+    width: 35%;
+    max-width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
 `;
 
 const CityInputForm = styled.form`
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
 `;
 
 const CityInput = styled.input`
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     border: none;
     border-radius: 10px;
     box-sizing: border-box;

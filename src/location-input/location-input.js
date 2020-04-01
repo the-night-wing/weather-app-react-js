@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdMyLocation } from "react-icons/md";
+import { FaSearchLocation } from "react-icons/fa";
 
 import { Button } from "../styles/global-styles";
 
@@ -37,9 +38,9 @@ export const LocationInput = () => {
                 </Button>
             </CityInputForm>
             <DetectLocationButton>
-                <MdMyLocation />
-                <span> </span>
-                Detect your location
+                {/* <MdMyLocation />
+                <span> </span> */}
+                <FaSearchLocation />
             </DetectLocationButton>
         </Container>
     );
