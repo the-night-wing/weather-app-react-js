@@ -8,7 +8,7 @@ const Container = styled.section`
     flex: 1;
     padding: 15px 70px 0px 70px;
     background-color: #f0f0f0;
-    & * {
+    & > * {
         margin: 0.5%;
     }
 `;

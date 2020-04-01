@@ -14,7 +14,7 @@ const Link = styled.span`
     cursor: pointer;
     font-size: 80%;
     color: rgb(44, 160, 206);
-    margin: 0;
+    margin: 0 10px;
 `;
 
 export { Container, Link };
