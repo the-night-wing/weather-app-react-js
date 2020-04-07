@@ -11,6 +11,9 @@ const Container = styled.section`
     & > * {
         margin: 0.5%;
     }
+    @media (max-width: 700px) {
+        padding: 15px 5px 0;
+    }
 `;
 
 export { Container };

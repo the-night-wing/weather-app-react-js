@@ -2,6 +2,7 @@
   "name": "weather-app-react-js",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://denhelsing.github.io/weather-app-react-js/",
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^1.0.43",
     "@testing-library/jest-dom": "^4.2.4",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
