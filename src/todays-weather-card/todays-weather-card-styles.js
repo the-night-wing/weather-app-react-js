@@ -12,9 +12,9 @@ const Container = styled.article`
     padding: 1% 0;
     color: #2b2b2b;
     width: 32%;
-    /* height: 25vw; */
-    /* height: 370px; */
-    /* margin: 0 1% 1% 0; */
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 const Temperature = styled.span`
@@ -52,5 +52,5 @@ export {
     SmallLabel,
     MiddleLabel,
     TemperatureBlock,
-    SaveLocation
+    SaveLocation,
 };

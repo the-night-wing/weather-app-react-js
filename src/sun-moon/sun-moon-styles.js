@@ -8,6 +8,9 @@ const Container = styled.article`
     ${CardStyles}
     height: 400px;
     width: 49%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 const Sun = styled.div`
@@ -129,5 +132,5 @@ export {
     Dawn,
     Sunrise,
     Sunset,
-    Dusk
+    Dusk,
 };

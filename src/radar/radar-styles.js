@@ -6,6 +6,9 @@ const Container = styled.article`
     ${CardStyles}
     width: 49%;
     height: 400px;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 const RadarWrapper = styled.div`

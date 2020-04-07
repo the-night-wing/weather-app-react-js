@@ -11,6 +11,9 @@ const Container = styled.article`
     padding: 1% 1%;
     padding-top: 5px;
     color: #2b2b2b;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 const ItemsBlock = styled.div`

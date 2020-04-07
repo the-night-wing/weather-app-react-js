@@ -7,7 +7,7 @@ const Container = styled.section`
     box-sizing : border-box;
     width: 31%;
     max-width: 150px;
-    margin: auto;
+    margin: 5px auto;
 `;
 
 const Text = styled.span`

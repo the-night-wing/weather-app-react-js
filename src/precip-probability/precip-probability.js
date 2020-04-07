@@ -32,7 +32,7 @@ export const PrecipProbability = () => {
             <ResponsiveContainer width="100%" height="80%">
                 <BarChart
                     data={data}
-                    margin={{ top: 0, right: 20, bottom: -10, left: -20 }}
+                    margin={{ top: 10, right: 20, bottom: -10, left: -20 }}
                 >
                     <Tooltip />
                     <CartesianGrid />
